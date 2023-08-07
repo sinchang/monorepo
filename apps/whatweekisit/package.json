@@ -1,0 +1,36 @@
+{
+  "name": "whatweekisit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development rspack dev",
+    "build:dev:": "NODE_ENV=development rspack build",
+    "build": "NODE_ENV=production rspack build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@internationalized/date": "^3.2.0",
+    "dayjs": "^1.11.7",
+    "react": "^18.2.0",
+    "react-aria": "^3.25.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-stately": "^3.23.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.0.0-canary-e59e026-20230502164248",
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.14",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.2.4",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.4"
+  }
+}
