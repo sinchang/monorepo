@@ -1,4 +1,4 @@
-import { Input } from "ui";
+import { Input, Button } from "ui";
 
 export default function Page() {
   return (
@@ -6,6 +6,9 @@ export default function Page() {
       <h1 className="text-4xl font-bold">Trace URL</h1>
       <p className="m-2 text-left">Trace URL helps you expand shortened URL into original URL or trace any URL with redirections towards the destination.</p>
       <Input className="mt-5" />
+      <div className="mt-2 text-center">
+        <Button>TRACE</Button>
+      </div>
     </div>
   );
 }
