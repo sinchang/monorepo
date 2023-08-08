@@ -3,6 +3,10 @@ lockfileVersion: '6.0'
 importers:
 
   .:
+    dependencies:
+      lucide-react:
+        specifier: ^0.265.0
+        version: 0.265.0(react@18.2.0)
     devDependencies:
       '@turbo/gen':
         specifier: ^1.9.7
@@ -65,6 +69,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      traceurl:
+        specifier: ^0.3.4
+        version: 0.3.4
       ui:
         specifier: workspace:*
         version: link:../../packages/ui
@@ -5523,6 +5530,10 @@ packages:
       argparse: 2.0.1
     dev: true
 
+  /jshelpers@1.0.7:
+    resolution: {integrity: sha512-80ZZ6aWNA7L2oPz0ZZRuFe/wMEZhvWkOQ0lITq3oXbGylMq7hrndzF+n698etOad1GC60WoGApCFcftDaGbtcA==}
+    dev: false
+
   /json-lines@1.0.0:
     resolution: {integrity: sha512-ytuLZb4RBQb3bTRsG/QBenyIo5oHLpjeCVph3s2NnoAsZE9K6h+uR+OWpEOWV1UeHdX63tYctGppBpGAc+JNMA==}
     dependencies:
@@ -5750,6 +5761,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide-react@0.265.0(react@18.2.0):
+    resolution: {integrity: sha512-znyvziBEUQ7CKR31GiU4viomQbJrpDLG5ac+FajwiZIavC3YbPFLkzQx3dCXT4JWJx/pB34EwmtiZ0ElGZX0PA==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /lusca@1.6.1:
     resolution: {integrity: sha512-+JzvUMH/rsE/4XfHdDOl70bip0beRcHSviYATQM0vtls59uVtdn1JMu4iD7ZShBpAmFG8EnaA+PrYG9sECMIOQ==}
@@ -7567,6 +7586,12 @@ packages:
     dependencies:
       punycode: 2.3.0
     dev: true
+
+  /traceurl@0.3.4:
+    resolution: {integrity: sha512-fvt1ytD06bDOCj+WNX2/1LPuBlertIoZBP3GWeEgaYFSJKZcN0cgHAk6fVuAGIdk1G5nJsH72gbv5l+3npS5kA==}
+    dependencies:
+      jshelpers: 1.0.7
+    dev: false
 
   /tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
