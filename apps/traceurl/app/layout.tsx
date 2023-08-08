@@ -2,6 +2,13 @@ import "../styles/global.css";
 // include styles from the ui package
 import "ui/styles.css";
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Trace URL',
+  description: 'Trace URL helps you expand shortened URL into original URL or trace any URL with redirections towards the destination.'
+}
+
 export default function RootLayout({
   children,
 }: {
