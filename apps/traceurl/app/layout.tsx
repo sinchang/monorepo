@@ -1,22 +1,27 @@
-import "../styles/global.css";
+import '../styles/global.css'
 // include styles from the ui package
-import "ui/styles.css";
+import 'ui/styles.css'
 
 import type { Metadata } from 'next'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'Trace URL',
-  description: 'Trace URL helps you expand shortened URL into original URL or trace any URL with redirections towards the destination.'
+  description:
+    'Trace URL helps you expand shortened URL into original URL or trace any URL with redirections towards the destination.',
 }
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
+      <Head>
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <body>{children}</body>
     </html>
-  );
+  )
 }
