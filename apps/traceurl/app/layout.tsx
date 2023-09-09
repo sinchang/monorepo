@@ -3,12 +3,17 @@ import '../styles/global.css'
 import 'ui/styles.css'
 
 import type { Metadata } from 'next'
-import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'Trace URL',
   description:
     'Trace URL helps you expand shortened URL into original URL or trace any URL with redirections towards the destination.',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  verification: {
+    google: 'ga0-ewVBlgVSftZ1FAi9FcIlMFzjfdtIPw8JhV-uLac'
+  }
 }
 
 export default function RootLayout({
@@ -18,10 +23,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <Head>
-        <link rel='shortcut icon' href='/favicon.ico' />
-        <meta name="google-site-verification" content="ga0-ewVBlgVSftZ1FAi9FcIlMFzjfdtIPw8JhV-uLac" />
-      </Head>
       <body>{children}</body>
     </html>
   )
