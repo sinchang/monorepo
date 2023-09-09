@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang='en'>
       <Head>
         <link rel='shortcut icon' href='/favicon.ico' />
+        <meta name="google-site-verification" content="ga0-ewVBlgVSftZ1FAi9FcIlMFzjfdtIPw8JhV-uLac" />
       </Head>
       <body>{children}</body>
     </html>
