@@ -2,8 +2,7 @@
   <div>
     <NuxtLayout>
     <ClientOnly>
-          <NuxtPage/>
-
+      <NuxtPage/>
     </ClientOnly>
     </NuxtLayout>
   </div>
